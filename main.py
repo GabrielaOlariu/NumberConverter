@@ -22,7 +22,7 @@ def main_menu():
     print("Option 6: exit app")
 
 def choose_option():
-    option = int(input("What option do you chose?"))
+    option = int(input("What option do you chose? "))
     match option:
         case 1:
             print("Reset app")
@@ -38,6 +38,11 @@ def choose_option():
         case 6:
             print("exit app")
             sys.exit()
+        case _:
+            print()
+            print(f"You chose {option} but this is invalid.")
+            main_menu()
+            choose_option()
 
 def start_program():
     welcome_user()
