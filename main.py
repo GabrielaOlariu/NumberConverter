@@ -1,5 +1,6 @@
 #develop these two functions
 
+import sys
    
 def introduce_developer():
     print("Hello, My name is Gabriela, I developed this program.")
@@ -36,6 +37,7 @@ def choose_option():
             print("hexadecimal converter")
         case 6:
             print("exit app")
+            sys.exit()
 
 def start_program():
     welcome_user()
